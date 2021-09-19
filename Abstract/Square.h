@@ -1,10 +1,10 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "Roots.h"
 #include <math.h>
 using namespace std;
 
-//квадратное уравнение сводится к виду: ax2 + bx + c = 0; 
+//РєРІР°РґСЂР°С‚РЅРѕРµ СѓСЂР°РІРЅРµРЅРёРµ СЃРІРѕРґРёС‚СЃСЏ Рє РІРёРґСѓ: ax2 + bx + c = 0; 
 
 class Square :
 	public rootEquation
@@ -26,15 +26,15 @@ public:
 		if (D > 0) {
 			cout << "D > 0 " << endl;
 			cout << "X1 = ";
-			return (-b + sqrt(D)) / 2 * a;// хотя при D > 0 есть и Х2 : -b - sqrt(D)) / 2 * a;
+			return (-b + sqrt(D)) / 2 * a;// С…РѕС‚СЏ РїСЂРё D > 0 РµСЃС‚СЊ Рё РҐ2 : -b - sqrt(D)) / 2 * a;
 		}
 		if (D == 0) {
 			cout << "D = 0 " << endl;
 			cout << "X1 = ";
-			return -b / 2 * a; //квадратное уравнение x = -b / 2 * 
+			return -b / 2 * a; //РєРІР°РґСЂР°С‚РЅРѕРµ СѓСЂР°РІРЅРµРЅРёРµ x = -b / 2 * 
 		}		
 		if (D < 0) {
-			cout << "D < 0 " << endl; //При D меньшем ноля уравнение не имеет корней.
+			cout << "D < 0 " << endl; //РџСЂРё D РјРµРЅСЊС€РµРј РЅРѕР»СЏ СѓСЂР°РІРЅРµРЅРёРµ РЅРµ РёРјРµРµС‚ РєРѕСЂРЅРµР№.
 			cout << "Equation has no roots " << endl;		
 		}
 	}

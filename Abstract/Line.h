@@ -1,9 +1,9 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "Roots.h"
 using namespace std;
 
-//линейное уравнение сводится к виду: ax + b = 0;
+//Р»РёРЅРµР№РЅРѕРµ СѓСЂР°РІРЅРµРЅРёРµ СЃРІРѕРґРёС‚СЃСЏ Рє РІРёРґСѓ: ax + b = 0;
 
 class Line :
     public rootEquation
@@ -17,7 +17,7 @@ public:
     double root()
     {
         cout << "X = ";
-        return -b / a;//линейное уравнение x = -b / a
+        return -b / a;//Р»РёРЅРµР№РЅРѕРµ СѓСЂР°РІРЅРµРЅРёРµ x = -b / a
     }
 };
 
